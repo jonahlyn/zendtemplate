@@ -1,0 +1,6 @@
+SetEnv APPLICATION_ENV development
+
+RewriteEngine On
+RewriteBase /zendtemplate/
+RewriteRule !\.(js|ico|txt|gif|jpg|png|css)$ index.php
+php_flag magic_quotes_gpc off
